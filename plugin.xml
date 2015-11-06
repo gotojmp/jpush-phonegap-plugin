@@ -18,33 +18,6 @@
             <clobbers target="window.plugins.jPushPlugin"/>
     </js-module>
 
-    <platform name="ios">
-            <config-file target="config.xml" parent="/*">
-                <feature name="JPushPlugin">
-                    <param name="ios-package" value="JPushPlugin"/>
-                </feature>
-            </config-file>
-
-            <header-file src="src/ios/Plugins/JPushPlugin.h"/>
-            <source-file src="src/ios/Plugins/JPushPlugin.m"/>
-           
-            <header-file src="src/ios/lib/APService.h" />
-            <source-file src="src/ios/lib/libPushSDK-1.8.3.a" framework="true" />
-            <header-file src="src/ios/Plugins/AppDelegate+JPush.h"/>
-            <source-file src="src/ios/Plugins/AppDelegate+JPush.m"/>
-            <resource-file src="src/ios/PushConfig.plist" />
-            <framework src="CFNetwork.framework" weak="true" />
-            <framework src="CoreFoundation.framework" weak="true" />
-            <framework src="CoreTelephony.framework" weak="true" />
-            <framework src="SystemConfiguration.framework" weak="true" />
-            <framework src="CoreGraphics.framework" weak="true" />
-            <framework src="Foundation.framework" weak="true" />
-            <framework src="UIKit.framework" weak="true" />
-            <framework src="Security.framework" weak="true" />
-            <framework src="libz.dylib" weak="true" />
-            
-        </platform>
-        
     <!-- android -->
     <platform name="android">
     
